@@ -50,8 +50,7 @@
       opacity: 0.15; z-index: 1;
     }
 
-    /* Fixed layer stacking for background elements */
-    #bg-1 { background-image: url('1.png'); opacity: 0.2; }
+    #bg-1 { background-image: url('1.png'); opacity: 1; }
     #bg-2 { background-image: url('2.png'); }
     #bg-3 { background-image: url('3.png'); }
     #bg-4 { background-image: url('4.png'); }
@@ -140,7 +139,7 @@
       <div class="content-overlay">
         <h2>Facts</h2>
         <p>Some days become special because of the events attached to them.</p>
-        <p>And somehow, today carries two beautiful meanings at once; the celebration of your birth and the completion of an important chapter of your life (POP).</p>
+<p>And somehow, today carries two beautiful meanings at once; the celebration of your birth and the completion of an important chapter of your life (POP).</p>
         <p><strong>That alone makes today worth remembering.</strong></p>
       </div>
       <div class="page-num">2 / 7</div>
@@ -151,8 +150,8 @@
       <div class="content-overlay">
         <h2>who i know you to be.</h2>
         <p>From the little time of knowing you, one thing that stands out naturally is your energy.</p>
-        <p>You have this calm sweetness mixed with strength and activity, the kind that makes people feel comfortable around you.</p>
-        <p>You’re hardworking, inquisitive, expressive, and genuinely pleasant to be around. And those qualities quietly make a difference.</p>
+<p>You have this calm sweetness mixed with strength and activity, the kind that makes people feel comfortable around you.</p>
+<p>You’re hardworking, inquisitive, expressive, and genuinely pleasant to be around. And those qualities quietly make a difference.</p>
       </div>
       <div class="page-num">3 / 7</div>
     </section>
@@ -173,12 +172,10 @@
       <div class="content-overlay">
         <h2>My Encouragement</h2>
         <p>As you pass out of NYSC today, I hope you pause long enough to appreciate how far you’ve come.</p>
-        <p style="font-size: 0.95rem; line-height: 1.8; margin-bottom: 10px;">
-          The experiences.<br>
-          The growth.<br>
-          The sacrifices.<br>
-          The memories.
-        </p>
+        <p>The experiences.<br>
+        The growth.<br>
+        The sacrifices.<br>
+        The memories.</p>
         <p>Every phase has been shaping you into someone even more beautiful in purpose and character.</p>
         <p>And I truly hope this next chapter brings you opportunities, peace, genuine happiness, and people who appreciate your heart.</p>
       </div>
@@ -221,6 +218,7 @@
       const validNames = ["ebruvwiyo", "blessing"];
 
       if(validNames.some(n => nameInput.includes(n))) {
+        // AUDIO FIX: Force play on user interaction
         audio.play().then(() => {
           console.log("Audio started");
         }).catch(e => {
